@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="css/header.css">
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p>
+                <a href='/'>
+                    Home
+                </a>
+            </p>
+        </div>
+    
+        <div class="auth-links">
+            <ul>
+                <% if (locals.user){ %>
+                <li>
+                    <a href="/users/profile/<%=user.id%>"><%= user.name %></a>
+                </li>
+                <li>
+                    <a href="/users/sign-out">Sign Out</a>
+                </li>
+                <% }else{ %>
+                <li>
+                    <form action="/users/create-session" method="POST">
+                        <input type="email" name="email" placeholder="Email"  required>
+                        <input type="password" name="password" placeholder="Password"  required>
+                        <input type="submit" value="Sign In">
+                    </form>
+                </li>
+                <a href="/forgot-password">Forgot Password ?</a>
+                <% } %>
+            </ul>
+
+        </div>
+    </nav>
+ 
+
+
+</header>

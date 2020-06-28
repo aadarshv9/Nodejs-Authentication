@@ -1,0 +1,13 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+<!-- <link rel="stylesheet" href="/css/user_profile.css"> -->
+<h1>
+    Nodejs Authentication / Profile Page
+</h1>
+    
+<p><%= profile_user.name %></p>
+<p><%= profile_user.email %></p>
+
+<a href="/users/reset-page/<%=profile_user._id%>" class="btn btn-secondary">Reset Password</a>
+
