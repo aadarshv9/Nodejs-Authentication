@@ -1,29 +1,30 @@
 # Nodejs-Authentication
  Authentication system which can be used as a starter code for creating any new application
 
-OverView
+OverView :-
 Building this project helps me in understanding the process/work flow behind authentication and autherization of users using the website.
 
-Package/Library Used :-
-GoogleCaptcha for integrating captcha during sign in/sign up
-  NPM Packages :-
-    express for running server and creating routes
-    mongoose ODM for interacting with mongoDB
-    ejs for rendering view/html pages
-    express-ejs-layouts to render partials and layouts
-    Bcrypto for encrypting passwords.
-    request for sending http request from server
-    dotenv to configure .env file(used for storing sensitive information)
-    passport for authentication
-    passport-local-strategy for local authentication
-    passport-google-oauth2-strategy for social authentication
-    nodemailer for sending mail
-    cookie-parser for parsing cookies
-    express-session for encrypting session-cookie made by passport
-    connect-mongo for storing session-cookie in DB to make them persistent
-    node-sass-middleware for generating css from scss/sass
-    connect-flash for setting notification messages in session-cookie
-    generate-passwords for creating random passwords
+External Libraries:-
+- GoogleCaptcha for integrating captcha during sign in/sign up
+
+NPM Packages :-
+- express for running server and creating routes
+- mongoose ODM for interacting with mongoDB
+- ejs for rendering view/html pages
+- express-ejs-layouts to render partials and layouts
+- Bcrypto for encrypting passwords.
+- request for sending http request from server
+- dotenv to configure .env file(used for storing sensitive information)
+- passport for authentication
+- passport-local-strategy for local authentication
+- passport-google-oauth2-strategy for social authentication
+- nodemailer for sending mail
+- cookie-parser for parsing cookies
+- express-session for encrypting session-cookie made by passport
+- connect-mongo for storing session-cookie in DB to make them persistent
+- node-sass-middleware for generating css from scss/sass
+- connect-flash for setting notification messages in session-cookie
+- generate-passwords for creating random passwords
 
 
 Features  :-
