@@ -1,8 +1,8 @@
 # Nodejs-Authentication
  Authentication system which can be used as a starter code for creating any new application
 
-OverView :-
-Building this project helps me in understanding the process/work flow behind authentication and autherization of users using the website.
+Overview :-
+- Building this project helps me in understanding the process/work flow behind authentication and autherization of users using the website.
 
 External Libraries:-
 - GoogleCaptcha for integrating captcha during sign in/sign up
@@ -27,7 +27,7 @@ NPM Packages :-
 - generate-passwords for creating random passwords
 
 
-Features  :-
+Features :-
 - Sign up with email
 - Sign in
 - Sign out
@@ -39,7 +39,7 @@ Features  :-
 
 
 
-What I Have Implemented
+What I Have Implemented :-
 - Creating server
 - Handling server Requests
 - Managing Routes
@@ -49,7 +49,8 @@ What I Have Implemented
 - Implementing Authentication using Passport
 - Displaying notifications 
 
-Folder Structure
+Folder Structure :-
+
     |__ProjectDir
         |__assets
         |   |__css
@@ -94,5 +95,5 @@ Folder Structure
         |__ package.json
         |__ ReadMe.md
         
-Run Project
-    npm start
+Run Project :-
+- npm start
