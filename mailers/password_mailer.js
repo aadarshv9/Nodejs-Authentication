@@ -2,10 +2,9 @@ const nodeMailer = require('../config/nodemailer');
 require('dotenv').config();
 
 exports.newPassword = (user) => {
-    console.log('inside newPassword mailer', user);
 
     let htmlString = nodeMailer.renderTemplate({user: user}, '/user/new_password.ejs');
-
+    // using transporter of nodemail to send mail
     nodeMailer.transporter.sendMail({
        from: process.env.user_id,
        to: user.email,

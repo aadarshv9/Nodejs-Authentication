@@ -12,7 +12,7 @@ const session = require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const passportGoogle = require('./config/passport-google-oauth2-strategy');
-
+// used mongo-store for storing session-cookies
 const MongoStore = require('connect-mongo')(session);
 const sassMiddleware = require('node-sass-middleware');
 // used flash library to show notification to user
@@ -68,7 +68,7 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-
+// middleware to set user in req to locals in res
 app.use(passport.setAuthenticatedUser);
 
 app.use(flash());
@@ -78,7 +78,7 @@ app.use(customMware.setFlash);
 // use express router
 app.use('/', require('./routes'));
 
-
+// starting server at localhost port:8000
 app.listen(port, function(err){
     if (err){
         console.log(`Error in running the server: ${err}`);

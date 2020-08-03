@@ -33,12 +33,12 @@ module.exports.create = function(req, res){
         };
     });    
         
-    //captcha is done and now normal sign up process function is followed
+    // matching passwords
     if (req.body.password != req.body.confirm_password){
         req.flash('error', 'Passwords do not match');
         return res.redirect('back');
     }
-
+    // finding if user already exists or not
     User.findOne({email: req.body.email}, function(err, user){
         if(err){req.flash('error', err); return}
 
